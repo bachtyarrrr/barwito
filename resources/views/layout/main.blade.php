@@ -23,8 +23,7 @@
             <!-- Left navbar links -->
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i
-                            class="fas fa-bars"></i></a>
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
             </ul>
 
@@ -41,7 +40,7 @@
                         <i class="far fa-user"></i>
                     </a>
                     <div class="dropdown-menu dropdown-menu-s dropdown-menu-right">
-                        <a href="#" class="dropdown-item">
+                        <a href="{{ route('auth.logout') }}" class="dropdown-item">
                             <div class="media">
                                 <div class="media-body">
                                     <h3 class="dropdown-item-title">
