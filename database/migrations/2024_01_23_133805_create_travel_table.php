@@ -13,12 +13,15 @@ return new class extends Migration
     {
         Schema::create('travel', function (Blueprint $table) {
             $table->id();
-            $table->string('type');
-            $table->unsignedBigInteger('user_id');
-            $table->text('reason')->nullable();
-            $table->date('letterdate');
-            $table->date('startenddate');
-            $table->string('status');
+            $table->string('travel_type');
+            $table->unsignedBigInteger('request_by');
+            $table->string('destination');
+            $table->text('reason');
+            $table->date('letter_date');
+            $table->date('start_date');
+            $table->date('end_date');
+            $table->string('approval_status');
+            $table->timestamps();
         });
     }
 
